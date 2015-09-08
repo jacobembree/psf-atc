@@ -1,0 +1,1481 @@
+/* Mixins */
+body {
+  /* Ashley: Website Edits 02/17/15 11:36 AM
+   * "There have been some concerns that the gray background color is too dull
+   * so I’ve been asked to change it to #0077CC."
+   * was #707b8c;
+   */
+  background-color: #0077CC; }
+
+/* Help the blog.  Not sure about the ramifications. */
+.views-view-grid tbody,
+.views-view-grid tr,
+.views-view-grid td {
+  max-width: 100%;
+}
+
+a, a:visited {
+  color: #0076bf;
+}
+li a.active {
+  color: #000000;
+}
+.sf-menu {
+  line-height: inherit;
+}
+.sf-menu ul {
+  width: inherit;/* override default Superfish style */
+}
+
+#logo {
+  position: absolute;
+}
+
+#logo img.site-logo {
+  width: 110px;
+  height: 51px;
+  margin: 25px 0 0 15px; }
+
+#print-logo-image {
+  display: none; }
+
+article ul.links {
+  text-align: left; }
+  article ul.links li {
+    margin: 0 10px 0 0; }
+.node-readmore, article ul.links li.node-readmore {
+  display: none;
+}
+
+#header-wrapper {
+  background-color: #f1f0ea;
+  margin: 40px 0 0; }
+  #header-wrapper header {
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    position: relative; }
+
+#menu-wrapper {
+  box-shadow: none;
+  /* Slightly higher than .region-header */
+  z-index: 1001;
+}
+
+.region-header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: right;
+  /* Ashley: Website Edits 02/17/15 11:36 AM
+   * "There have been some concerns that the gray background color is too dull
+   * so I’ve been asked to change it to #0077CC."
+   * was #707b8c;
+   */
+  background-color: #0077CC;
+  color: #fff;
+  /* Matches the header-wrapper of the next size up.  Should be above all
+   * but the superfish toggle. */
+  z-index: 1000;
+  font-weight: 400; }
+  .region-header li {
+    clear: left;
+    display: inline;
+    margin: 5px 15px 0 0;
+    line-height: 40px;
+    padding: 0;
+    font-size: 1.0em; }
+  .region-header li:nth-child(3) {
+    display: none; }
+  .region-header a {
+    color: #fff; }
+  .region-header h2 {
+    display: none; }
+  .region-header p, .region-header div, .region-header form {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+  .region-header #search-block-form {
+    display: none; }
+  #search-block-form .form-submit {
+    margin: 0;
+    padding: 0;
+  }
+  #superfish-1-accordion {
+    position: relative; }
+  #block-superfish-1 #superfish-1-toggle {
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 7px;
+    left: 8px;
+    width: 30px;
+    height: 25px;
+    background-image: url("../images/mobileNav.png");
+    padding: 0; }
+  #block-superfish-1 #superfish-1-toggle:active {
+    background: transparent;
+  }
+  #superfish-1-toggle span {
+    display: none; }
+  #superfish-1-accordion .sf-clone-parent {
+    display: none; }
+
+nav#block-superfish-1 {
+  /*display: none;*/
+  max-height: 100px; }
+  nav#block-superfish-1 ul.menu {
+    margin: 0;
+    padding: 0; }
+  nav#block-superfish-1 .contact-us {
+    background-color: #e6eaf1; }
+  /*nav#block-superfish-1*/ #superfish-1-accordion ul {
+    /* sfsmallscreen.js adds display: none;, causing the initial view of
+     * submenus to be collapsed.
+     */
+    display: block !important;
+  }
+  #superfish-1-accordion ul.sf-hidden {
+    left: 0 !important;
+  }
+  nav#block-superfish-1 ul {
+    display: block;
+    position: relative;
+    z-index: 300;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;/* broke main-menu */
+    padding: 0 0 10px 0;
+    background-color: #e6eaf1; }
+    nav#block-superfish-1 ul ul {
+      left: 0;
+      margin: 0;
+      padding: 0 0 10px 0;
+      right: inherit;
+      top: 0 }
+    nav#block-superfish-1 .sf-hidden {
+      top: inherit !important;
+    }
+      nav#block-superfish-1 ul ul li {
+        float: none;/* j: each menu item on its own line */
+        margin-left: 15px; }
+      nav#block-superfish-1 ul ul a {
+        font-weight: 400; }
+  nav#block-superfish-1 li {
+    clear: left;
+    padding: 0 !important;
+    list-style-type: none;
+    list-style-image: none; }
+  nav#block-superfish-1 .sf-hidden li.sf-depth-1 {
+    display: none; }
+  nav#block-superfish-1 a {
+    margin: 0 !important;
+    font-weight: 700;
+    color: #0076bf;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: block; }
+  nav#block-superfish-1 a.active {
+    font-weight: 700; }
+  nav#block-superfish-1 a:active {
+    background-color: #fff; }
+
+#page-wrapper {
+  max-width: 100%;
+  min-width: 0%;
+  /* Ashley: Website Edits 02/17/15 11:36 AM
+   * "There have been some concerns that the gray background color is too dull
+   * so I’ve been asked to change it to #0077CC."
+   * was #707b8c;
+   */
+  background-color: #0077CC;
+  font-size: 0.75em;
+  line-height: 1.633em; }
+
+.front #content-wrapper .container {
+  max-width: inherit;
+}
+.not-front #content-wrapper .container {
+  width: 100%;
+  margin: 0 auto;
+  /*background-color: #f5f8fc;*/
+  background-color: #fff;
+  padding: 0 0 50px 0; }
+  .not-front #content {
+    margin: 0 12px; }
+    /*#content-wrapper #content-column*/ #breadcrumb {
+      display: none; }
+    #content-wrapper #content-column #page-title {
+      margin-left: 12px;
+      margin-right: 12px; }
+    #content-wrapper #content-column .node-title,
+    #content-wrapper #content-column #page-title {
+      /* Ashley: Website Edits 02/10/15 6:35 PM
+       * "All page titles – Bold these so they stand out a bit more."
+       * was font-weight: 400;
+       */
+      font-weight: 700;
+      line-height: 1.2em;
+      color: #0076bf;
+      margin-bottom: 0; }
+    .section-community #content-wrapper #content-column #page-title {
+      display: none; }
+    #content-wrapper #content h2 {
+      /* "Read Our Blog" taking up too much space.  Everything except
+       * a little off the top of the header looks necessary.  Was:
+       * margin: 1.8em 0 0.9em 0;
+       */
+      margin: 0.8em 0 0.9em 0; }
+    #content-wrapper #content h3 {
+      margin: 1.6em 0 0.8em 0; }
+    #content-wrapper #content h4 {
+      margin: 1.4em 0 0.7em 0; }
+    #content-wrapper #content h5 {
+      margin: 1.2em 0 0.6em 0; }
+    #content-wrapper #content p {
+      font-size: 1.2em;
+      margin: 1.2em 0 0.8em 0;
+      line-height: 1.6em; }
+    #content-wrapper #content li {
+      font-size: 1.2em; }
+
+.social-share {
+  text-align: center; }
+  .social-share span {
+    color: #707b8c;
+    line-height: 40px;
+    vertical-align: top; }
+  .social-share ul {
+    list-style-type: none;
+    list-style-image: none;
+    background-color: #e6eaf1;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 8px; }
+  .social-share li {
+    float: right;
+    line-height: 0;
+    margin: 0 5px; }
+
+.not-front.no-sidebars #main-content {
+  margin: 0 10px;
+}
+#main-content header {
+  padding: 30px 0 0 0; /* was margin */}
+
+/* j: Hide .region-sidebar-first on mobile.  Seems unnecessary.
+ * Confirmed.  Now we hide just menus because they themselves seem
+ * unnecessary and are not yet styled.
+ * Mid-January: display menu for mobile users.
+ * January 19: hide menus for mobile users because they are now part of Main
+ * menu.
+ */
+/*.region-sidebar-first {*/
+.not-logged-in .region-sidebar-first nav.block {
+  display: none; }
+
+
+    .region-sidebar-first .block-30 p,
+    .region-sidebar-first .block-31 p,
+    .region-sidebar-first .block-34 p,
+    .region-sidebar-first .block-35 p,
+    .region-sidebar-first .block-36 p,
+    .region-sidebar-first .block-38 p,
+    .region-sidebar-first .block-39 p,
+    .region-sidebar-first .block-40 p,
+    .region-sidebar-first .block-41 p,
+    .region-sidebar-first .block-42 p,
+    .region-sidebar-first .block-43 p,
+    .region-sidebar-first .block-44 p,
+    .region-sidebar-first .block-46 p,
+    .region-sidebar-first .block-47 p,
+    .region-sidebar-first .block-48 p,
+    .region-sidebar-first .block-49 p,
+    .region-sidebar-first .block-60 p {
+      max-width: 180px;
+      text-align: center; }
+    .region-sidebar-first .block-38 ul {
+      margin-left: 40px; }
+    .region-sidebar-first .block-30 p a img,
+    .region-sidebar-first .block-31 p a img,
+    .region-sidebar-first .block-34 p a img,
+    .region-sidebar-first .block-35 p a img,
+    .region-sidebar-first .block-36 p a img,
+    .region-sidebar-first .block-38 p a img,
+    .region-sidebar-first .block-39 p a img,
+    .region-sidebar-first .block-40 p a img,
+    .region-sidebar-first .block-41 p a img,
+    .region-sidebar-first .block-42 p a img,
+    .region-sidebar-first .block-43 p a img,
+    .region-sidebar-first .block-44 p a img,
+    .region-sidebar-first .block-46 p a img,
+    .region-sidebar-first .block-47 p a img,
+    .region-sidebar-first .block-48 p a img,
+    .region-sidebar-first .block-49 p a img,
+    .region-sidebar-first .block-60 p a img {
+      margin-top: 20px; }
+
+
+    .region-sidebar-first .sf-accordion-toggle {
+      display: none; }
+    .region-sidebar-first .block-menu h2,
+    .region-sidebar-first .block-superfish h2 {
+      display: none; }
+    .region-sidebar-first .block-menu ul,
+    .region-sidebar-first .block-superfish ul {
+      margin: 0;
+      padding: 0; }
+      .region-sidebar-first .block-menu ul li,
+      .region-sidebar-first .block-superfish ul li {
+        list-style-type: none;
+        list-style-image: none;
+        margin: 4px 0; }
+        .region-sidebar-first .block-menu ul li a,
+        .region-sidebar-first .block-superfish ul li a {
+          color: #808284;
+          font-weight: 700;
+          text-decoration: none;
+          font-size: 1.0em; }
+        .region-sidebar-first .block-menu ul li a:hover,
+        .region-sidebar-first .block-superfish ul li a:hover {
+          color: #000;
+          text-decoration: underline; }
+      .region-sidebar-first .block-menu ul ul,
+      .region-sidebar-first .block-superfish ul ul {
+        margin: 0 0 0 15px; }
+        .region-sidebar-first .block-menu ul ul li,
+        .region-sidebar-first .block-superfish ul ul li {
+          margin: 2px 0; }
+          .region-sidebar-first .block-menu ul ul li a,
+          .region-sidebar-first .block-superfish ul ul li a {
+            color: #808284;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 0.9em; }
+
+header .block-menu::after,
+header .block-superfish::after,
+.region-sidebar-first .block-menu::after,
+.region-sidebar-first .block-superfish::after {
+  position: absolute;
+  bottom: -15px;
+  left: 0px; }
+
+/* Related Information and Blog Posts */
+.region-sidebar-first .block h5 {
+  padding-left: 24px; }
+
+.asstart .asstart-header {
+  display: inline-block;
+}
+.asstart .ui-accordion-content {
+  padding: 0;
+  border: 0 none;
+}
+.asstart .ui-widget-content {
+  color: inherit;
+}
+
+.btn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-align: center;
+  display: block;
+  max-width: 150px; }
+
+.teal {
+  background-color: #22b3bd; }
+
+.red {
+  background-color: #ea4c2d; }
+
+.green {
+  background-color: #a9bf2a; }
+
+.blue {
+  background-color: #0076bf; }
+
+.orange {
+  background-color: #ffa300; }
+
+#footer-wrapper {
+  font-size: 12px;
+  /* Ashley: Website Edits 02/17/15 11:36 AM
+   * "There have been some concerns that the gray background color is too dull
+   * so I’ve been asked to change it to #0077CC."
+   * was #707b8c;
+   */
+  background-color: #0077CC;
+  color: #fff;
+  padding: 20px 15px 50px;
+  clear: both;
+  position: relative; }
+  #footer-wrapper .social-follow, #footer-wrapper #YouTube, #footer-wrapper #LinkedIn, #footer-wrapper #Twitter, #footer-wrapper #RSS {
+    float: left;
+    display: inline-block;
+    margin: 0 12px 0 0; }
+  #block-block-4 a[href="/content/privacy-policy"] {
+    display: none;
+  }
+  #footer-wrapper .bottomToolbarRight, #footer-wrapper #google_translate_element, #block-menu-menu-footer {
+    margin-top: 20px; }
+  #block-menu-menu-footer {
+    color: #cfd8e5;
+    margin-top: 40px; }
+    #block-menu-menu-footer ul {
+      margin-bottom: 0;
+      margin-left: 0; }
+      #block-menu-menu-footer li::after {
+        content: '|';
+        padding-left: 6px;
+      }
+      #block-menu-menu-footer li.last::after {
+        content: '';
+      }
+      #block-menu-menu-footer ul li {
+        display: inline;
+        padding: 0; }
+        #block-menu-menu-footer ul li a {
+          color: #cfd8e5;
+          text-decoration: none; }
+        #block-menu-menu-footer ul li a:hover {
+          text-decoration: underline; }
+  #footer-wrapper #block-block-4 {
+    color: #cfd8e5;
+    position: absolute;
+    top: 20px;
+    left: 15px; }
+  #footer-wrapper #google_translate_element {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/button-translate.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    color: #FFFFFF;
+    display: block;
+    height: 24px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 105px;
+    margin: 20px 0 0; }
+  #footer-wrapper #google_translate_element #\:0\.targetLanguage {
+    position: relative;
+    top: -15px; }
+  #footer-wrapper select.goog-te-combo {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 105px;
+    z-index: 5;
+    /*left: -90px;*/
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0); }
+
+/*Clearfix*/
+/*.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+*/
+#features .feature-teal {
+  background-color: #22b3bd; }
+#features .feature-red {
+  background-color: #ea4c2d; }
+#features .feature-green {
+  background-color: #a9bf2a; }
+#features .feature-orange {
+  background-color: #ffa300; }
+
+#help-me-automate-desktop {
+  display: none; }
+
+#help-me-automate-desktop h4 {
+  margin: 0.5em 0 1.5em; }
+
+#clients {
+  padding: 30px 0;
+  background-color: #dee4ed;
+  text-align: center; }
+
+.front .center-wrapper {
+  background-color: #cfd8e5;
+  padding: 40px 0;
+  width: 99.9%; }
+  .front .center-wrapper .leadin {
+    font-weight: 700;
+    font-size: 1.0em; }
+  .front .center-wrapper .publish-date {
+    color: #58585b;
+    font-size: 0.8em; }
+  .front .center-wrapper .article-preview {
+    font-size: 1.0em; }
+
+.front #content-wrapper .title {
+  font-size: 2.0em;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #0076bf;
+  margin-bottom: 0; }
+.front #content-wrapper h2 {
+  margin: 1.8em 0 0.9em 0; }
+.front #content-wrapper h3,
+.front #content-wrapper #content .pane-title {
+  font-size: 2.4em;
+  margin: 0.8em 0 0.8em 0;
+  font-weight: 400;
+  color: #707b8c;
+  line-height: 1.2em; }
+.front #content-wrapper h4 {
+  font-size: 1.8em;
+  margin: 1.4em 0 0.7em 0;
+  font-weight: 400;
+  color: #6d6e70; }
+.front #content-wrapper h5 {
+  margin: 1.2em 0 0.6em 0; }
+.front #content-wrapper p {
+  font-size: 1.2em;
+  margin: 1.2em 0 0.8em 0;
+  line-height: 1.6em; }
+.front #content-wrapper #features {
+  margin-top: 0px; }
+  .front #content-wrapper #features .feature {
+    width: 100%; }
+    .front #content-wrapper #features .feature h1 {
+      font-size: 28px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 1.1em; }
+    .front #content-wrapper #features .feature h2 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 1.2em; }
+      .front #content-wrapper #features .feature h1 a,
+      .front #content-wrapper #features .feature h2 a {
+        color: white;
+      }
+  .front #content-wrapper #features .feature-wimage .content-wrapper {
+    max-width: 100%;
+    padding: 60px 20px;
+    margin: 0 auto;
+    height: 165px; }
+    .front #content-wrapper #features .feature-wimage .content-wrapper h1 {
+      text-align: center; }
+    .front #content-wrapper #features .feature-wimage .content-wrapper h2 {
+      text-align: center; }
+    .front #content-wrapper #features .feature-wimage .content-wrapper img {
+      display: none; }
+  .front #content-wrapper #features .feature-noimage .content-wrapper {
+    max-width: 100%;
+    padding: 60px 20px;
+    margin: 0 auto;
+    height: 165px; }
+    .front #content-wrapper #features .feature-noimage .content-wrapper h1 {
+      text-align: center; }
+    .front #content-wrapper #features .feature-noimage .content-wrapper h2 {
+      text-align: center; }
+    .front #content-wrapper #features .cycle-pager {
+      height: 10px;
+      left: 50%;
+      margin-left: -50px;
+      position: absolute;
+      top: 20px;
+      width: 100px;
+      z-index: 101;
+    }
+    .front #content-wrapper #features .cycle-pager .cycle-pager-active {
+      background-position: 0 10px;
+    }
+    .front #content-wrapper #features .cycle-pager span,
+    .front #content-wrapper #features .cycle-pager div {
+      background-image: url("../images/cycle-dot.png");
+      background-position: 0 0;
+      display: block;
+      float: left;
+      height: 10px;
+      margin: 0 5px;
+      width: 10px;
+    }
+    .front #content-wrapper #features .cycle-prev,
+    .front #content-wrapper #features .cycle-next {
+      height: 40px;
+      margin-top: -20px;
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      z-index: 101;
+    }
+    .front #content-wrapper #features .cycle-prev:hover,
+    .front #content-wrapper #features .cycle-next:hover {
+      background-position: 0 40px;
+    }
+    .front #content-wrapper #features .cycle-prev {
+      background-image: url("../images/cycle-left-arrow.png");
+      left: 20px;
+    }
+    .front #content-wrapper #features .cycle-next {
+      background-image: url("../images/cycle-right-arrow.png");
+      right: 20px;
+    }
+.front #content-wrapper #clients {
+  padding: 50px 0;
+  background-color: #dee4ed;
+  text-align: center; }
+  .front #content-wrapper #clients .content-wrapper {
+    padding: 0 50px;
+    position: relative;
+    /*max-width: 750px;*/
+    max-width: 850px;
+    margin: 0 auto; }
+  .front #content-wrapper #clients .client-logo {
+    float: left;
+    height: 80px;
+    margin: 0 0px;
+    width: 150px; }
+  .front #clients .cycle-slideshow {
+    display: inline-block;
+    float: none;
+  }
+  .front #clients .cycle-slideshow .cycle-carousel-wrap > div {
+    padding: 0 10px;
+  }
+  .front #clients .cycle-pager {
+    color: white;
+    font-size: 32px; }
+  .front #clients .client-prev,
+  .front #clients .client-next {
+    background-position: 0 -40px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    height: 60px;
+    position: absolute;
+    width: 40px;
+  }
+  .front #clients .client-prev {
+    background-image: url("../images/cycle-left-arrow.png");
+    left: 0px;
+  }
+  .front #clients .client-next {
+    background-image: url("../images/cycle-right-arrow.png");
+    right: 0px;
+  }
+.front #content-wrapper #help-me-automate-desktop {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  padding: 144px 0 50px;
+  position: relative; }
+  .front #content-wrapper #help-me-automate-desktop h4 {
+    margin: 0px 0px 10px;
+    line-height: 1.2em; }
+.front #content-wrapper .help-me-automate-float {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 149px;
+  top: -20px;
+  left: 0;
+  z-index: 200; }
+  .front #content-wrapper .help-me-automate-float div {
+    background-image: url("../images/help-me-automate-mobile.png");
+    background-size: 144px 149px;
+    width: 144px;
+    height: 149px;
+    margin: 0 auto; }
+.front #content-wrapper #help-me-automate-mobile {
+  display: none; }
+.front #content-wrapper .help-area {
+  width: 200px;
+  margin: 0 auto 30px auto;
+  text-align: center; }
+.front #content-wrapper .center-wrapper .content-wrapper {
+  max-width: 875px;
+  margin: 0 20px; }
+.front #content-wrapper .center-wrapper .panel-col-second {
+  margin-bottom: 50px; }
+  .front #content-wrapper .center-wrapper .panel-col-second img {
+    float: left;
+    margin-right: 20px; }
+  .front #content-wrapper .center-wrapper .panel-col-second .btn {
+    float: left;
+    margin: 10px 0 0 0; }
+.front #content-wrapper .center-wrapper .panel-col-first {
+  margin-bottom: 50px; }
+.front #content-wrapper .center-wrapper p.leadin {
+  font-size: 1.2em;
+  color: #000;
+  font-weight: bold; }
+.front #content-wrapper .center-wrapper p.publish-date {
+  font-size: 0.9em;
+  color: #58585b; }
+.front #content-wrapper .center-wrapper p.article-preview {
+  font-size: 1.2em;
+  color: #000; }
+
+.page-community .panel-3col-stacked .panel-col-first {
+  width: 100%;
+}
+.page-community .panel-3col-stacked .panel-col {
+  width: 100%;
+}
+.page-community .panel-3col-stacked .panel-col-last {
+  width: 100%;
+}
+
+.field-name-body .field-item blockquote,
+.field-name-body .field-item blockquote,
+.field-name-body .field-item blockquote {
+  padding-left: 0; }
+.field-name-body .field-item blockquote:before,
+.field-name-body .field-item blockquote:before,
+.field-name-body .field-item blockquote:before {
+  content: url("/sites/all/files/images/BeginQuote.jpg"); }
+.field-name-body .field-item blockquote:after,
+.field-name-body .field-item blockquote:after,
+.field-name-body .field-item blockquote:after {
+  background-image: url("/sites/all/files/images/EndQuote_0.jpg");
+  background-position: 0 18px;
+  background-repeat: no-repeat;
+  content: "";
+  padding: 20px; }
+  .field-name-body .field-item blockquote img,
+  .field-name-body .field-item blockquote img,
+  .field-name-body .field-item blockquote img {
+    float: right;
+    margin-left: 15px; }
+/* See also responsive.custom.css */
+div.what-clients-are-saying:first-child,
+#node-92 .field-name-body .field-item > div:first-child,
+#node-95 .field-name-body .field-item > div:first-child,
+#node-99 .field-name-body .field-item > div:first-child {
+  clear: left; }
+div.what-clients-are-saying,
+#node-92 .field-name-body .field-item > div,
+#node-95 .field-name-body .field-item > div,
+#node-99 .field-name-body .field-item > div {
+  clear: both;
+  padding-bottom: 15px; }
+  div.what-clients-are-saying > div,
+  #node-92 .field-name-body .field-item > div > div,
+  #node-95 .field-name-body .field-item > div > div,
+  #node-99 .field-name-body .field-item > div > div {
+    float: none; }
+  div.what-clients-are-saying > div > div,
+  #node-92 .field-name-body .field-item > div > div > div,
+  #node-95 .field-name-body .field-item > div > div > div,
+  #node-99 .field-name-body .field-item > div > div > div {
+    margin-left: 10px; }
+#node-128 .field-name-body .field-item {
+  overflow: auto;
+}
+#node-458 ul ul {
+  margin-left: 36px;
+}
+/* Contact form is before the rest */
+#node-36 .field-name-body .field-item > div:first-of-type {
+  float: left;
+  width: 100%;
+}
+#node-36 .field-name-body .field-item > div:first-of-type iframe {
+  float: left;
+}
+
+#node-647 td {
+  border: 1px solid black;
+}
+
+.view-passionate-clients .views-slideshow-pager-fields div {
+  display: inline;
+}
+.view-passionate-clients .views-content-counter {
+  color: #0076bf;
+  padding-left: 10px;
+}
+.view-passionate-clients .views-content-counter:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.poll {
+  font-size: 1.2em;
+}
+body .poll .bar .foreground {
+  background-color: #0076bf;
+}
+
+.duo-wide-image {
+  display: none;
+}
+.duo-narrow-image {
+  display: block;
+}
+
+@media screen and (min-width: 48em) {
+  /*Viewport = 768px to 1024px */
+  #logo {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  #logo img.site-logo { margin-top: 0; }
+  #logo img.site-logo {
+    width: 160px;
+    height: 75px;
+    margin-top: 25px;
+  }
+
+.social-share {
+  float: right;
+  margin: 0 0 0 20px; }
+  .social-share span {
+    display: block; }
+  .social-share li {
+    float: none;
+    margin: 3px 0; }
+  #header-wrapper {
+    margin: 40px 0; }
+    #header-wrapper header {
+      height: 125px; }
+
+  /*.front #content-wrapper #header-wrapper {
+    margin: 0; }*/
+
+  #menu-wrapper {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+#header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header-filler {
+  /* Ashley: Website Edits 02/17/15 11:36 AM
+   * "There have been some concerns that the gray background color is too dull
+   * so I’ve been asked to change it to #0077CC."
+   * was
+   * none repeat scroll 0 0 #707b8c;
+   */
+  background: none repeat scroll 0 0 #0077CC;
+  float: left;
+  height: 40px;
+  position: relative;
+  top: -40px;
+  width: 100%;
+}
+body.front #content-wrapper,
+body.not-front #content-wrapper {
+  margin-top: 205px;
+}
+
+  .region-header li {
+    margin: 0 15px 0 0; }
+  .region-header li:nth-child(3) {
+    display: inline; }
+  .region-header a {
+    text-decoration: none; }
+  .region-header a:hover {
+    text-decoration: underline; }
+  .region-header .form-item {
+    margin: 0; }
+  .region-header #search-block-form {
+    display: block; }
+  .region-header input.form-text {
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #e6eaf1;
+    color: #768294;
+    font-size: 12px;
+    position: relative;
+    right: 0;
+    padding: 4px 12px;
+    border: 0;
+    width: 155px;
+    margin: 10px 0 0; }
+  .region-header input.form-submit {
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    z-index: 10;
+    top: 13px;
+    right: 10px; }
+
+  nav#block-superfish-1 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    nav#block-superfish-1 ul {
+      overflow: visible;
+    }
+    nav#block-superfish-1 ul.menu {
+      margin: 0;
+      overflow: visible;
+      padding: 0; }
+      nav#block-superfish-1 ul.menu a.headerNav {
+        height: 100%; }
+      nav#block-superfish-1 ul.menu .sf-depth-1.sf-breadcrumb a.headerNav {
+        /* Ashley: Website Edits 02/17/15 11:36 AM
+         * "There have been some concerns that the gray background color is too
+         * dull so I’ve been asked to change it to #0077CC."
+         * was #707b8c;
+         */
+        background-color: #0077CC;
+        color: #f9f8f0; }
+      nav#block-superfish-1 ul.menu li.headerNav {
+        z-index: 200;
+        position: relative;
+        padding: 8px;
+        margin: 0 0 0 2px; }
+      nav#block-superfish-1 ul.menu li.headerNav:hover {
+        z-index: 201;
+      }
+      nav#block-superfish-1 ul.menu li.headerNav:hover a {
+        z-index: 20;
+        position: relative; }
+    nav#block-superfish-1 .contact-us {
+      background-color: #f1f0ea;
+      z-index: 20;
+      position: relative;
+      padding: 8px;
+      margin: 0 0 0 2px; }
+    nav#block-superfish-1 ul {
+      display: inline;
+      position: relative;
+      bottom: 0;
+      right: 0; }
+    nav#block-superfish-1 li {
+      clear: none;
+      float: left;
+      list-style-type: none;
+      list-style-image: none; }
+      nav#block-superfish-1 li ul {
+        visibility: hidden;
+        position: absolute;
+        top: 39.5px;
+        left: 0px;
+        width: 100px;
+        background-color: transparent;
+        -webkit-box-shadow: 3px 5px 5px 3px #4b5361;
+        -moz-box-shadow: 3px 5px 5px 3px #4b5361;
+        box-shadow: 3px 5px 5px 3px #4b5361; }
+      nav#block-superfish-1 .sf-hidden {
+        /*top: inherit !important;*/
+      }
+        nav#block-superfish-1 li ul li ul {
+          display: none !important; }
+        nav#block-superfish-1 li ul li {
+          float: none;
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0; }
+          nav#block-superfish-1 li ul li a {
+            width: 200px;
+            background-color: #f9f8f0;
+            color: #0076bf;
+            font-weight: 400;
+            font-size: 1.2em;
+            padding: 10px 5px;
+            text-decoration: none;
+            text-align: left;
+            -webkit-border-top-right-radius: 0px;
+            border-top-right-radius: 0px;
+            -webkit-border-top-left-radius: 0px;
+            border-top-left-radius: 0px; }
+          nav#block-superfish-1 li ul li a:hover {
+          /* Killed by Ashley 01/09/14 10:16 AM
+           * "Re: More website help ..."
+           */
+            /*background-color: #707b8c;
+            color: #fff;*/
+            -webkit-border-top-right-radius: 0px;
+            border-top-right-radius: 0px;
+            -webkit-border-top-left-radius: 0px;
+            border-top-left-radius: 0px; }
+          nav#block-superfish-1 li ul li a:hover {
+            text-decoration: underline; }
+    nav#block-superfish-1 a {
+      background-color: #f9f8f0;
+      color: #0076bf;
+      font-weight: 400;
+      font-size: 1.0em;
+
+      /* Ashley: "A few more items..." 01/26/2015 5:48 PM
+       * Consequence of expanding size of logo: need to reduce menu
+       * was min-width: 58px;
+       */
+      min-width: 45px;
+
+      padding: 10px 6px;
+      text-decoration: none;
+      text-align: center;
+      -webkit-border-top-right-radius: 10px;
+      border-top-right-radius: 10px;
+      -webkit-border-top-left-radius: 10px;
+      border-top-left-radius: 10px; }
+    nav#block-superfish-1 a:hover {
+      /* Ashley: Website Edits 02/17/15 11:36 AM
+       * "There have been some concerns that the gray background color is too
+       * dull * so I’ve been asked to change it to #0077CC. ... On the
+       * homepage, the ... on the other pages ... the top nav link will need to
+       * change."
+       * was #707b8c;
+       */
+      background-color: #0077CC;
+      color: #fff;
+      -webkit-border-top-right-radius: 10px;
+      border-top-right-radius: 10px;
+      -webkit-border-top-left-radius: 10px;
+      border-top-left-radius: 10px; }
+    nav#block-superfish-1 li ul li a:hover {
+      background-color: #f9f8f0;
+      color: #0076bf; }
+    nav#block-superfish-1 a.active {
+      /*background-color: #707b8c;
+      color: #fff;*/
+      /* These rounded corners are not wanted in the main menu when the items
+       * are stacked (normal).
+      -webkit-border-top-right-radius: 10px;
+      border-top-right-radius: 10px;
+      -webkit-border-top-left-radius: 10px;
+      border-top-left-radius: 10px;*/ }
+
+  nav#block-superfish-1 li:hover > ul {
+    visibility: visible; }
+
+  .not-front #content-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 0 50px 0;
+    -webkit-box-shadow: 5px 5px 0px #4b5361;
+    -moz-box-shadow: 5px 5px 0px #4b5361;
+    box-shadow: 5px 5px 0px #4b5361; }
+    .not-front #content-wrapper .container {
+    }
+    /*#content-wrapper #content-column {
+      overflow: visible;
+      margin: 0 40px; }*/
+      #content-wrapper #content-column .node-title,
+      #content-wrapper #content-column #page-title {
+        /* Ashley: Website Edits 02/10/15 6:35 PM
+        * "All page titles – Bold these so they stand out a bit more."
+        * was font-weight: 400;
+        */
+        font-weight: 700;
+        line-height: 1.2em;
+        color: #0076bf;
+        margin-bottom: 0; }
+      #content-wrapper #content h2 {
+        /* "Read Our Blog" taking up too much space.  Everything except
+         * a little off the top of the header looks necessary.  Was:
+         * margin: 1.8em 0 0.9em 0;
+         */
+        margin: 0.8em 0 0.9em 0; }
+      #content-wrapper #content .panel-col-first h2,
+      #content-wrapper #content .panel-col-last h2 {
+        margin-top: 0; }
+      #content-wrapper #content h3 {
+        margin: 1.6em 0 0.8em 0; }
+      #content-wrapper #content h4 {
+        margin: 1.4em 0 0.7em 0; }
+      #content-wrapper #content h5 {
+        margin: 0em 0 0.6em 0; /* was 1.2em 0 0.6em 0 */}
+      #content-wrapper #content p {
+        font-size: 1.2em;
+        /* Ashley: Website Edits 02/10/15 6:05 PM
+         * "What’s New - can there be a little less space between the titles and
+         * summaries?"
+         * was margin: 1.2em 0 0.8em 0
+         */
+        margin: 0.2em 0 0.8em 0;
+        line-height: 1.6em; }
+
+  /* compensate for specific rule hiding sidebar menus on mobile */
+  .not-logged-in .region-sidebar-first nav.block {
+    display: block;
+  }
+  .region-sidebar-first {
+    display: block;
+    width: 205px;
+    float: left;
+    margin-right: 40px; }
+    /*.region-sidebar-first img {
+      margin: 5px 10px; }*/
+    .region-sidebar-first h2 {
+      color: #707b8c;
+      font-size: 1.2em;
+      margin: 5px 10px; }
+    .region-sidebar-first p {
+      margin: 5px 10px;
+      color: #707b8c; }
+    .region-sidebar-first h6 {
+      margin: 5px 10px;
+    }
+    .region-sidebar-first .quote {
+      font-style: italic; }
+    #page .region-sidebar-first a {
+      color: #0076bf; }
+    #page .region-sidebar-first a.active {
+      color: #000; }
+
+  /*.sidebar-region .btn {
+    width: 140px;
+    margin: 5px auto; }*/
+  .region-sidebar-first li.sf-no-children {
+    padding: 0.2em 0.5em 0 0; }
+  /* Show the hidden submenus */
+  .region-sidebar-first .sf-breadcrumb ul.sf-hidden,
+  .region-sidebar-first .sf-menu .sf-breadcrumb ul {
+    position: static; }
+  .region-sidebar-first li.sfHover {
+    position: relative;
+  }
+    .region-sidebar-first li.sfHover.sf-breadcrumb ul {
+      position: relative;
+      top: inherit;
+      left: inherit;
+    }
+  .region-sidebar-first ul li {
+    width: 100%; }
+  .region-sidebar-first .block-menu,
+  .region-sidebar-first .block-superfish {
+    background-color: #e6eaf1;
+    max-width: 175px;
+    padding: 15px;
+    margin: 0 0 20px;
+    position: relative; }
+    .region-sidebar-first .block-menu h2,
+    .region-sidebar-first .block-superfish h2 {
+      display: none; }
+    .region-sidebar-first .block-menu ul,
+    .region-sidebar-first .block-superfish ul {
+      margin: 0;
+      padding: 0; }
+      .region-sidebar-first .block-menu ul li,
+      .region-sidebar-first .block-superfish ul li {
+        list-style-type: none;
+        list-style-image: none;
+        margin: 4px 0; }
+        .region-sidebar-first .block-menu ul li a,
+        .region-sidebar-first .block-superfish ul li a {
+          color: #808284;
+          font-weight: 700;
+          text-decoration: none;
+          font-size: 1.0em; }
+        .region-sidebar-first .block-menu ul li a:hover,
+        .region-sidebar-first .block-superfish ul li a:hover {
+          color: #000;
+          text-decoration: underline; }
+      .region-sidebar-first .block-menu ul ul,
+      .region-sidebar-first .block-superfish ul ul {
+        margin: 0 0 0 15px;
+
+        /* Chris: Only display sub pages when clicked */
+        left: -999999999px;
+        top: -999999999px;
+
+      }
+        .region-sidebar-first .block-menu ul ul li,
+        .region-sidebar-first .block-superfish ul ul li {
+          margin: 2px 0; }
+          .region-sidebar-first .block-menu ul ul li a,
+          .region-sidebar-first .block-superfish ul ul li a {
+            color: #808284;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 0.9em; }
+
+  #footer-wrapper {
+    width: 100%;
+    margin: 6px auto 0;
+    padding: 20px 0 50px; }
+    #footer-wrapper ul.menu {
+      float: right; }
+    #footer-wrapper .social-follow, #footer-wrapper #YouTube, #footer-wrapper #LinkedIn, #footer-wrapper #Twitter, #footer-wrapper #RSS {
+      margin: 0 0 0 12px; }
+    #footer-wrapper #block-menu-menu-footer {
+      width: 33%; }
+    #block-block-26 {
+      float: left;
+      width: 67%; }
+    #google_translate_element, .bottomToolbarRight {
+        width: 50%; }
+    #footer-wrapper .bottomToolbarRight, #footer-wrapper #google_translate_element, #block-menu-menu-footer {
+        float: right;
+        margin-top: 0px; }
+    #block-menu-menu-footer {
+      text-align: right;
+      margin-top: 0px; }
+    #footer-wrapper #footer {
+      width: 25%;
+      left: 0; }
+    #footer-wrapper #google_translate_element {
+      margin: 0 auto; }
+
+  .front #content-wrapper .title {
+    font-size: 2.0em;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #0076bf;
+    margin-bottom: 0; }
+  .front #content-wrapper h2 {
+    margin: 1.8em 0 0.9em 0; }
+  .front #content-wrapper h3 {
+    font-size: 2.4em;
+    margin: 0.8em 0 0.8em 0;
+    font-weight: 400;
+    color: #707b8c; }
+  .front #content-wrapper h4 {
+    font-size: 1.8em;
+    margin: 1.4em 0 0.7em 0;
+    font-weight: 400;
+    color: #6d6e70; }
+  .front #content-wrapper h5 {
+    margin: 1.2em 0 0.6em 0; }
+  .front #content-wrapper p {
+    font-size: 1.2em;
+    margin: 1.2em 0 0.8em 0;
+    line-height: 1.6em; }
+  .front #content-wrapper #features {
+    margin-top: -40px; }
+    .front #content-wrapper #features .feature {
+      width: 100%;
+      height: 420px; }
+      .front #content-wrapper #features .feature h1 {
+        font-size: 35px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.1em; }
+      .front #content-wrapper #features .feature h2 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.2em; }
+      .front #content-wrapper #features .feature h1 a,
+        .front #content-wrapper #features .feature h2 a {
+          color: white;
+        }
+    .front #content-wrapper #features .feature-wimage .content-wrapper {
+      max-width: 720px;
+      padding: 140px 165px 0 165px; }
+      .front #content-wrapper #features .feature-wimage .content-wrapper .text {
+        overflow: visible; }
+      .front #content-wrapper #features .feature-wimage .content-wrapper img {
+        margin-top: -40px;
+        float: right; }
+    .front #content-wrapper #features .feature-noimage {
+      text-align: center; }
+      .front #content-wrapper #features .feature-noimage .content-wrapper {
+        /* Ashley: "A few more items..." 01/26/2015 5:48 PM
+         * Long text overflows with narrow box.  Opposing factor is that
+         * long lines are hard to read.  Was
+            width: 40%;
+            padding: 140px 165px 0 165px;
+         */
+        padding: 140px 100px 0 100px;
+        width: 70%; }
+        .front #content-wrapper #features .feature-noimage .content-wrapper h1 {
+          text-align: center; }
+        .front #content-wrapper #features .feature-noimage .content-wrapper h2 {
+          text-align: center; }
+  .front #content-wrapper #help-me-automate-desktop {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 144px 0 40px;
+    position: relative;
+    background-image: url("../images/rays.png");
+    background-repeat: no-repeat;
+    background-position: center top; }
+  .front #content-wrapper .help-me-automate-float {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 144px;
+    top: -40px;
+    left: 0;
+    z-index: 200; }
+    .front #content-wrapper .help-me-automate-float div {
+      background-image: url("../images/help-me-automate.png");
+      background-size: 144px 149px;
+      width: 144px;
+      height: 149px;
+      margin: 0 auto; }
+  .front #content-wrapper #help-me-automate-mobile {
+    display: none; }
+  .front #content-wrapper .help-area {
+    float: left;
+    width: 31.33%;
+    margin: 0 1%;
+    text-align: center; }
+    .front #content-wrapper .help-area .btn {
+      margin: 0 auto; }
+  .front #content-wrapper .center-wrapper .content-wrapper {
+    max-width: 875px;
+    margin: 0 20px; }
+  .front #content-wrapper .center-wrapper .panel-col-second {
+    float: right;
+    width: 47%; }
+    .front #content-wrapper .center-wrapper .panel-col-second img {
+      float: left;
+      margin-right: 20px; }
+    .front #content-wrapper .center-wrapper .panel-col-second .btn {
+      float: left; }
+  /*.front #content-wrapper .center-wrapper .panel-col-first {
+    float: left;
+    width: 47%; }*/
+  .front #content-wrapper .center-wrapper p.leadin {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: bold; }
+  .front #content-wrapper .center-wrapper p.publish-date {
+    font-size: 0.9em;
+    color: #58585b; }
+  .front #content-wrapper .center-wrapper p.article-preview {
+    font-size: 1.2em;
+    color: #000; }
+.twitter-timeline-rendered {
+  height: 800px;
+}
+
+.page-community .panel-3col-stacked .panel-col-first {
+  width: 100%;
+}
+.page-community .panel-3col-stacked .panel-col {
+  width: 50%;
+}
+.page-community .panel-3col-stacked .panel-col-last {
+  width: 50%;
+}
+
+#node-59 .field-name-body .field-item p {
+  padding-left: 170px;
+}
+#node-59 .field-name-body .field-item img {
+  margin-left: -170px;
+}
+/* Contact form is before the rest */
+#node-36 .field-name-body .field-item > div:first-of-type {
+  float: none;
+  width: 100%;
+}
+#node-36 .field-name-body .field-item > div:first-of-type iframe {
+  float: right;
+}
+
+.duo-wide-image {
+  display: block;
+}
+.duo-narrow-image {
+  display: none;
+}
+
+
+/* Ashley 01/22/2015 9:58 AM: Hide Careers items from main menu. */
+#menu-1287-1 ul {
+  /* "!important" because we can't compete against Superfish's inline
+   * styles.
+   */
+  display: none !important; }
+
+
+}
+
+@media screen and (min-width: 64em) {
+  /*Viewport = 1024px or more*/
+  #header-wrapper header {
+    width: 1000px; }
+
+  .region-header {
+    width: 1000px; }
+    /* Was invalid CSS provided by Zeis Group; now fixed but not wanted */
+    /*a:hover, a {
+      text-decoration: underline; }*/
+
+  #logo img.site-logo {
+    margin-left: 0; /* was default */
+    width: 260px;/* was 160px, then 200px */
+    height: 122px;/* was 75px, then 93.75px */
+    margin-top: 0px;/* was 25px, then 12px */
+  }
+
+header .block-menu::after,
+header .block-superfish::after,
+.region-sidebar-first .block-menu::after,
+.region-sidebar-first .block-superfish::after {
+  content: url("../images/left-nav-shadow.png");
+}
+  nav#block-superfish-1 ul.menu li.headerNav {
+    padding: 15px; }
+  nav#block-superfish-1 .contact-us {
+    padding: 15px; }
+  nav#block-superfish-1 li ul {
+    top: 43.5px; /* was 43px; */ }
+  nav#block-superfish-1 a {
+    min-width: 73px;
+    font-size: 1.2em;
+    /* Ashley: Website Edits 03/23/15 5:44 PM
+     * "... adjust the padding on the navigation tabs again to see if we can
+     * make room for a bit bigger logo"
+     * was padding: 12px 10px
+     */
+    padding: 12px 5px; }
+
+  .not-front #content-wrapper {
+    width: 1000px; }
+    /*#content-wrapper #content-column {
+      float: right;
+      width: 715px;
+      margin: 0 40px 0 0; }*/
+
+  #footer-wrapper {
+    font-size: 14px;
+    width: 1000px; }
+
+  .front #content-wrapper .content-wrapper {
+    width: 1000px;
+    margin: 0 auto; }
+  .front #content-wrapper .center-wrapper .content-wrapper {
+    margin: 0 auto; }
+
+.page-community .panel-3col-stacked .panel-col-first {
+  width: 25%;
+}
+.page-community .panel-3col-stacked .panel-col {
+  width: 50%;
+}
+.page-community .panel-3col-stacked .panel-col-last {
+  width: 25%;
+}
+}

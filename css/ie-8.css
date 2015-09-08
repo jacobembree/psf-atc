@@ -1,0 +1,27 @@
+/* IE8 */
+ #commerce-checkout-form-checkout fieldset {
+  border: 1px solid;
+}
+
+.front #content-wrapper #help-me-automate-desktop {
+  background-position: center 144px;
+}
+.front #content-wrapper .help-me-automate-float {
+  height: 288px;
+}
+.front #content-wrapper .help-me-automate-float div {
+  height: 298px;
+  width: 288px;
+}
+.front #content-wrapper #help-me-automate-desktop {
+  padding-top: 288px;
+}
+
+#search-block-form .form-type-textfield {
+  display: block;
+  width: 180px;
+}
+#search-block-form .form-type-textfield input {
+  position: absolute;
+  top: 0;
+}

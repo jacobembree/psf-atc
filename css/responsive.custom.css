@@ -1,0 +1,123 @@
+/**
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+
+/* Some basic examples of cascading media queries. */
+
+/* Really small screens and up */
+@media only screen and (min-width: 220px) {
+  #block-superfish-1 .sf-hidden {
+    left: inherit;
+  }
+}
+/**/
+
+/* Smartphone sizes and up
+@media only screen and (min-width: 320px) {
+}*/
+
+@media only screen and (min-width: 512px) {
+  #node-92 .field-name-body .field-item > div > div,
+  #node-95 .field-name-body .field-item > div > div,
+  #node-99 .field-name-body .field-item > div > div {
+    float: right; }
+}
+
+/* Smartphone sizes and down */
+@media only screen and (max-width: 480px) {
+
+  /* j: remove space between outer menu item and corresponding submenu */
+  #block-superfish-1 .sf-menu li:hover > ul,
+  .sf-menu li.sf-depth-1 > ul {
+    left: inherit !important;
+    top: inherit !important;
+  }
+  #node-32 .node-content .field-name-body .field-item p:first-of-type,
+  #node-47 .node-content .field-name-body .field-item p:nth-of-type(2) > span,
+  #node-79 .node-content .field-name-body .field-item p:first-of-type > span,
+  #node-81 .node-content .field-name-body .field-item p:first-of-type,
+  #node-363 .node-content .field-name-body .field-item p:nth-of-type(2),
+  #node-657 .node-content .field-name-body .field-item p:first-of-type {
+    clear: both;
+    display: block;
+  }
+
+  /*
+    Float Region blocks example:
+    In smaller screen sizes we can remove the float and widths so all blocks
+    stack instead of displaying horizonally. The selector used here is an
+    "attribute selector" which will match on any float block class. Use your
+    inspector or Firebug to get the classes from the page output if you need
+    more granular control over block alignment and stacking.
+
+    "Float Region blocks" is an extension for floating blocks in regions, see
+    your themes appearance settings, under the Extensions tab.
+  */
+  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/* Tablet sizes and up
+@media only screen and (min-width: 768px) {
+}
+*/
+
+@media only screen and (max-width: 768px) {
+  .region-sidebar-first .block-menu ul ul,
+  .region-sidebar-first .block-superfish ul ul {
+    left: 0 !important;
+    position: relative;
+    top: 0 !important;
+  }
+}
+
+/* Desktops/laptops and up
+@media only screen and (min-width: 1025px) {
+}
+*/
+
+
+/* Formula:
+ * media min-width =
+ *  (width of slide + left-padding + right-padding) * count(slides)
+ *  + width of cycle-next + width of cycle-prev
+ *
+ * min-width = media min-width - (width of cycle-next + width of cycle-prev)
+ */
+.front #clients .cycle-slideshow {
+  min-width: 170px;
+}
+@media screen and (min-width: 440px) {
+  .front #clients .cycle-slideshow {
+    min-width: 340px;
+  }
+}
+@media screen and (min-width: 610px) {
+  .front #clients .cycle-slideshow {
+    min-width: 510px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .front #clients .cycle-slideshow {
+    min-width: 680px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .front #clients .cycle-slideshow {
+    min-width: 850px;
+  }
+}
