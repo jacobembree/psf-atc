@@ -123,7 +123,8 @@ function adaptivetheme_subtheme_process_block(&$vars) {
  */
 function psf_atc_js_alter(&$javascript) {
   // Disable animation of Main Menu
-  $javascript[libraries_get_path('superfish') . '/sfsmallscreen.js']['data'] = drupal_get_path('theme', 'psf_atc') . '/scripts/sfsmallscreen.js';
+  $file = drupal_get_path('theme', 'psf_atc') . '/scripts/sfsmallscreen.js';
+  $javascript[libraries_get_path('superfish') . '/sfsmallscreen.js']['data'] = drupal_js_defaults($file);
 }
 
 /**
