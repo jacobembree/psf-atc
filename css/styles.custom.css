@@ -1,10 +1,5 @@
 /* Mixins */
 body {
-  /* Ashley: Website Edits 02/17/15 11:36 AM
-   * "There have been some concerns that the gray background color is too dull
-   * so I’ve been asked to change it to #0077CC."
-   * was #707b8c;
-   */
   background-color: #0077CC; }
 
 /* Help the blog.  Not sure about the ramifications. */
@@ -32,8 +27,6 @@ li a.active {
 }
 
 #logo img.site-logo {
-  width: 110px;
-  height: 51px;
   margin: 25px 0 0 15px; }
 
 #print-logo-image {
@@ -48,8 +41,7 @@ article ul.links {
 }
 
 #header-wrapper {
-  background-color: #f1f0ea;
-  margin: 40px 0 0; }
+  }
   #header-wrapper header {
     width: 100%;
     margin: 0 auto;
@@ -65,17 +57,11 @@ article ul.links {
 .region-header {
   width: 100%;
   height: 40px;
-  position: fixed;
   top: 0;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   text-align: right;
-  /* Ashley: Website Edits 02/17/15 11:36 AM
-   * "There have been some concerns that the gray background color is too dull
-   * so I’ve been asked to change it to #0077CC."
-   * was #707b8c;
-   */
   background-color: #0077CC;
   color: #fff;
   /* Matches the header-wrapper of the next size up.  Should be above all
@@ -187,11 +173,6 @@ nav#block-superfish-1 {
 #page-wrapper {
   max-width: 100%;
   min-width: 0%;
-  /* Ashley: Website Edits 02/17/15 11:36 AM
-   * "There have been some concerns that the gray background color is too dull
-   * so I’ve been asked to change it to #0077CC."
-   * was #707b8c;
-   */
   background-color: #0077CC;
   font-size: 0.75em;
   line-height: 1.633em; }
@@ -214,10 +195,6 @@ nav#block-superfish-1 {
       margin-right: 12px; }
     #content-wrapper #content-column .node-title,
     #content-wrapper #content-column #page-title {
-      /* Ashley: Website Edits 02/10/15 6:35 PM
-       * "All page titles – Bold these so they stand out a bit more."
-       * was font-weight: 400;
-       */
       font-weight: 700;
       line-height: 1.2em;
       color: #0076bf;
@@ -415,11 +392,6 @@ header .block-superfish::after,
 
 #footer-wrapper {
   font-size: 12px;
-  /* Ashley: Website Edits 02/17/15 11:36 AM
-   * "There have been some concerns that the gray background color is too dull
-   * so I’ve been asked to change it to #0077CC."
-   * was #707b8c;
-   */
   background-color: #0077CC;
   color: #fff;
   padding: 20px 15px 50px;
@@ -843,8 +815,6 @@ body .poll .bar .foreground {
   }
   #logo img.site-logo { margin-top: 0; }
   #logo img.site-logo {
-    width: 160px;
-    height: 75px;
     margin-top: 25px;
   }
 
@@ -857,7 +827,7 @@ body .poll .bar .foreground {
     float: none;
     margin: 3px 0; }
   #header-wrapper {
-    margin: 40px 0; }
+    }
     #header-wrapper header {
       height: 125px; }
 
@@ -870,18 +840,12 @@ body .poll .bar .foreground {
     right: 0;
   }
 #header-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 .header-filler {
-  /* Ashley: Website Edits 02/17/15 11:36 AM
-   * "There have been some concerns that the gray background color is too dull
-   * so I’ve been asked to change it to #0077CC."
-   * was
-   * none repeat scroll 0 0 #707b8c;
-   */
   background: none repeat scroll 0 0 #0077CC;
   float: left;
   height: 40px;
@@ -891,7 +855,6 @@ body .poll .bar .foreground {
 }
 body.front #content-wrapper,
 body.not-front #content-wrapper {
-  margin-top: 205px;
 }
 
   .region-header li {
@@ -944,11 +907,6 @@ body.not-front #content-wrapper {
       nav#block-superfish-1 ul.menu a.headerNav {
         height: 100%; }
       nav#block-superfish-1 ul.menu .sf-depth-1.sf-breadcrumb a.headerNav {
-        /* Ashley: Website Edits 02/17/15 11:36 AM
-         * "There have been some concerns that the gray background color is too
-         * dull so I’ve been asked to change it to #0077CC."
-         * was #707b8c;
-         */
         background-color: #0077CC;
         color: #f9f8f0; }
       nav#block-superfish-1 ul.menu li.headerNav {
@@ -1013,11 +971,6 @@ body.not-front #content-wrapper {
             -webkit-border-top-left-radius: 0px;
             border-top-left-radius: 0px; }
           nav#block-superfish-1 li ul li a:hover {
-          /* Killed by Ashley 01/09/14 10:16 AM
-           * "Re: More website help ..."
-           */
-            /*background-color: #707b8c;
-            color: #fff;*/
             -webkit-border-top-right-radius: 0px;
             border-top-right-radius: 0px;
             -webkit-border-top-left-radius: 0px;
@@ -1029,13 +982,7 @@ body.not-front #content-wrapper {
       color: #0076bf;
       font-weight: 400;
       font-size: 1.0em;
-
-      /* Ashley: "A few more items..." 01/26/2015 5:48 PM
-       * Consequence of expanding size of logo: need to reduce menu
-       * was min-width: 58px;
-       */
       min-width: 45px;
-
       padding: 10px 6px;
       text-decoration: none;
       text-align: center;
@@ -1044,13 +991,6 @@ body.not-front #content-wrapper {
       -webkit-border-top-left-radius: 10px;
       border-top-left-radius: 10px; }
     nav#block-superfish-1 a:hover {
-      /* Ashley: Website Edits 02/17/15 11:36 AM
-       * "There have been some concerns that the gray background color is too
-       * dull * so I’ve been asked to change it to #0077CC. ... On the
-       * homepage, the ... on the other pages ... the top nav link will need to
-       * change."
-       * was #707b8c;
-       */
       background-color: #0077CC;
       color: #fff;
       -webkit-border-top-right-radius: 10px;
@@ -1088,19 +1028,11 @@ body.not-front #content-wrapper {
       margin: 0 40px; }*/
       #content-wrapper #content-column .node-title,
       #content-wrapper #content-column #page-title {
-        /* Ashley: Website Edits 02/10/15 6:35 PM
-        * "All page titles – Bold these so they stand out a bit more."
-        * was font-weight: 400;
-        */
         font-weight: 700;
         line-height: 1.2em;
         color: #0076bf;
         margin-bottom: 0; }
       #content-wrapper #content h2 {
-        /* "Read Our Blog" taking up too much space.  Everything except
-         * a little off the top of the header looks necessary.  Was:
-         * margin: 1.8em 0 0.9em 0;
-         */
         margin: 0.8em 0 0.9em 0; }
       #content-wrapper #content .panel-col-first h2,
       #content-wrapper #content .panel-col-last h2 {
@@ -1113,11 +1045,6 @@ body.not-front #content-wrapper {
         margin: 0em 0 0.6em 0; /* was 1.2em 0 0.6em 0 */}
       #content-wrapper #content p {
         font-size: 1.2em;
-        /* Ashley: Website Edits 02/10/15 6:05 PM
-         * "What’s New - can there be a little less space between the titles and
-         * summaries?"
-         * was margin: 1.2em 0 0.8em 0
-         */
         margin: 0.2em 0 0.8em 0;
         line-height: 1.6em; }
 
@@ -1297,12 +1224,6 @@ body.not-front #content-wrapper {
     .front #content-wrapper #features .feature-noimage {
       text-align: center; }
       .front #content-wrapper #features .feature-noimage .content-wrapper {
-        /* Ashley: "A few more items..." 01/26/2015 5:48 PM
-         * Long text overflows with narrow box.  Opposing factor is that
-         * long lines are hard to read.  Was
-            width: 40%;
-            padding: 140px 165px 0 165px;
-         */
         padding: 140px 100px 0 100px;
         width: 70%; }
         .front #content-wrapper #features .feature-noimage .content-wrapper h1 {
@@ -1402,20 +1323,12 @@ body.not-front #content-wrapper {
 }
 
 
-/* Ashley 01/22/2015 9:58 AM: Hide Careers items from main menu. */
-#menu-1287-1 ul {
-  /* "!important" because we can't compete against Superfish's inline
-   * styles.
-   */
-  display: none !important; }
-
-
 }
 
 @media screen and (min-width: 64em) {
   /*Viewport = 1024px or more*/
   #header-wrapper header {
-    width: 1000px; }
+  }
 
   .region-header {
     width: 1000px; }
@@ -1425,8 +1338,6 @@ body.not-front #content-wrapper {
 
   #logo img.site-logo {
     margin-left: 0; /* was default */
-    width: 260px;/* was 160px, then 200px */
-    height: 122px;/* was 75px, then 93.75px */
     margin-top: 0px;/* was 25px, then 12px */
   }
 
@@ -1445,19 +1356,10 @@ header .block-superfish::after,
   nav#block-superfish-1 a {
     min-width: 73px;
     font-size: 1.2em;
-    /* Ashley: Website Edits 03/23/15 5:44 PM
-     * "... adjust the padding on the navigation tabs again to see if we can
-     * make room for a bit bigger logo"
-     * was padding: 12px 10px
-     */
     padding: 12px 5px; }
 
   .not-front #content-wrapper {
     width: 1000px; }
-    /*#content-wrapper #content-column {
-      float: right;
-      width: 715px;
-      margin: 0 40px 0 0; }*/
 
   #footer-wrapper {
     font-size: 14px;
