@@ -27,7 +27,8 @@ li a.active {
 }
 
 #logo img.site-logo {
-  margin: 25px 0 0 15px; }
+  margin: 25px 0 0 15px;
+  width: 270px; }
 
 #print-logo-image {
   display: none; }
@@ -62,7 +63,6 @@ article ul.links {
   margin-right: auto;
   overflow: hidden;
   text-align: right;
-  background-color: #0077CC;
   color: #fff;
   /* Matches the header-wrapper of the next size up.  Should be above all
    * but the superfish toggle. */
@@ -173,7 +173,7 @@ nav#block-superfish-1 {
 #page-wrapper {
   max-width: 100%;
   min-width: 0%;
-  background-color: #0077CC;
+  background-color: #2D3948;
   font-size: 0.75em;
   line-height: 1.633em; }
 
@@ -220,27 +220,32 @@ nav#block-superfish-1 {
     #content-wrapper #content li {
       font-size: 1.2em; }
 
-.social-share {
-  text-align: center; }
-  .social-share span {
-    color: #707b8c;
-    line-height: 40px;
-    vertical-align: top; }
-  .social-share ul {
-    list-style-type: none;
-    list-style-image: none;
-    background-color: #e6eaf1;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 0;
-    padding: 8px; }
-  .social-share li {
-    float: right;
-    line-height: 0;
-    margin: 0 5px; }
+  .neat-button a {
+    background-color: #E07865; /* dusty rose */
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #block-block-17 p {
+    line-height: 34px;
+    padding: 0 30px;
+    text-transform: uppercase;
+  }
+  #block-block-17 p:hover {
+    opacity: 0.5;
+  }
+  #block-block-17 .last p {
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  #block-block-17 p a:hover {
+    text-decoration: none;
+  }
 
 .not-front.no-sidebars #main-content {
   margin: 0 10px;
@@ -258,47 +263,6 @@ nav#block-superfish-1 {
 /*.region-sidebar-first {*/
 .not-logged-in .region-sidebar-first nav.block {
   display: none; }
-
-
-    .region-sidebar-first .block-30 p,
-    .region-sidebar-first .block-31 p,
-    .region-sidebar-first .block-34 p,
-    .region-sidebar-first .block-35 p,
-    .region-sidebar-first .block-36 p,
-    .region-sidebar-first .block-38 p,
-    .region-sidebar-first .block-39 p,
-    .region-sidebar-first .block-40 p,
-    .region-sidebar-first .block-41 p,
-    .region-sidebar-first .block-42 p,
-    .region-sidebar-first .block-43 p,
-    .region-sidebar-first .block-44 p,
-    .region-sidebar-first .block-46 p,
-    .region-sidebar-first .block-47 p,
-    .region-sidebar-first .block-48 p,
-    .region-sidebar-first .block-49 p,
-    .region-sidebar-first .block-60 p {
-      max-width: 180px;
-      text-align: center; }
-    .region-sidebar-first .block-38 ul {
-      margin-left: 40px; }
-    .region-sidebar-first .block-30 p a img,
-    .region-sidebar-first .block-31 p a img,
-    .region-sidebar-first .block-34 p a img,
-    .region-sidebar-first .block-35 p a img,
-    .region-sidebar-first .block-36 p a img,
-    .region-sidebar-first .block-38 p a img,
-    .region-sidebar-first .block-39 p a img,
-    .region-sidebar-first .block-40 p a img,
-    .region-sidebar-first .block-41 p a img,
-    .region-sidebar-first .block-42 p a img,
-    .region-sidebar-first .block-43 p a img,
-    .region-sidebar-first .block-44 p a img,
-    .region-sidebar-first .block-46 p a img,
-    .region-sidebar-first .block-47 p a img,
-    .region-sidebar-first .block-48 p a img,
-    .region-sidebar-first .block-49 p a img,
-    .region-sidebar-first .block-60 p a img {
-      margin-top: 20px; }
 
 
     .region-sidebar-first .sf-accordion-toggle {
@@ -473,20 +437,12 @@ header .block-superfish::after,
 .clearfix {
   *zoom: 1; }
 */
-#features .feature-teal {
-  background-color: #22b3bd; }
-#features .feature-red {
-  background-color: #ea4c2d; }
-#features .feature-green {
-  background-color: #a9bf2a; }
-#features .feature-orange {
-  background-color: #ffa300; }
-
-#help-me-automate-desktop {
-  display: none; }
-
-#help-me-automate-desktop h4 {
-  margin: 0.5em 0 1.5em; }
+#features .feature-first {
+  background-image: url('../images/slide1.png'); }
+#features .feature-second {
+  background-image: url('../images/slide1.png'); }
+#features .feature-third {
+  background-image: url('../images/slide1.png'); }
 
 #clients {
   padding: 30px 0;
@@ -535,12 +491,16 @@ header .block-superfish::after,
 .front #content-wrapper #features {
   margin-top: 0px; }
   .front #content-wrapper #features .feature {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%; }
     .front #content-wrapper #features .feature h1 {
       font-size: 28px;
+      font-weight: normal;
       color: #fff;
-      font-weight: 400;
-      line-height: 1.1em; }
+      line-height: 1.1em;
+      text-transform: uppercase; }
     .front #content-wrapper #features .feature h2 {
       font-size: 18px;
       color: #fff;
@@ -550,6 +510,9 @@ header .block-superfish::after,
       .front #content-wrapper #features .feature h2 a {
         color: white;
       }
+    .front #content-wrapper #features .feature .neat-button {
+      margin-top: 46px;
+    }
   .front #content-wrapper #features .feature-wimage .content-wrapper {
     max-width: 100%;
     padding: 60px 20px;
@@ -613,6 +576,10 @@ header .block-superfish::after,
       background-image: url("../images/cycle-right-arrow.png");
       right: 20px;
     }
+.front #content-wrapper .below-features p {
+  color: white;
+  text-align: center;
+}
 .front #content-wrapper #clients {
   padding: 50px 0;
   background-color: #dee4ed;
@@ -655,35 +622,57 @@ header .block-superfish::after,
     background-image: url("../images/cycle-right-arrow.png");
     right: 0px;
   }
-.front #content-wrapper #help-me-automate-desktop {
+.front #content-wrapper .how-it-works-flow {
   display: block;
   width: 100%;
   background-color: #fff;
-  padding: 144px 0 50px;
+  padding: 50px 0 50px;
   position: relative; }
-  .front #content-wrapper #help-me-automate-desktop h4 {
+  .front #content-wrapper .how-it-works-flow h2 {
+    font-size: 2.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .front #content-wrapper .how-it-works-flow h4 {
+    color: black;
     margin: 0px 0px 10px;
     line-height: 1.2em; }
-.front #content-wrapper .help-me-automate-float {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  height: 149px;
-  top: -20px;
-  left: 0;
-  z-index: 200; }
-  .front #content-wrapper .help-me-automate-float div {
-    background-image: url("../images/help-me-automate-mobile.png");
-    background-size: 144px 149px;
-    width: 144px;
-    height: 149px;
-    margin: 0 auto; }
-.front #content-wrapper #help-me-automate-mobile {
-  display: none; }
-.front #content-wrapper .help-area {
-  width: 200px;
-  margin: 0 auto 30px auto;
-  text-align: center; }
+  .front #content-wrapper .how-it-works-step {
+    width: 200px;
+    margin: 0 auto 30px auto;
+    text-align: center; }
+      .front #content-wrapper .how-it-works-step h3 {
+        color: #E07865;
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+      .front #content-wrapper .how-it-works-step h4 {
+        font-size: 1.6em;
+      }
+      .front #content-wrapper .how-it-works-step .top-adverb,
+      .front #content-wrapper .how-it-works-step .bottom-adverb {
+        text-transform: uppercase;
+      }
+      .front #content-wrapper .how-it-works-step .top-adverb {
+        color: white;
+        background-color: #C9C9C9;
+        height: 2px;
+        margin: 20px;
+        width: 240px;
+      }
+      .front #content-wrapper .how-it-works-step:hover .top-adverb {
+        background-color: none;
+      }
+      .front #content-wrapper .how-it-works-step .top-adverb p {
+        display: none;
+      }
+      .front #content-wrapper .how-it-works-step:hover .top-adverb p {
+        display: block;
+      }
+      .front #content-wrapper .how-it-works-step .bottom-adverb {
+        color: #E07865;
+      }
 .front #content-wrapper .center-wrapper .content-wrapper {
   max-width: 875px;
   margin: 0 20px; }
@@ -816,16 +805,9 @@ body .poll .bar .foreground {
   #logo img.site-logo { margin-top: 0; }
   #logo img.site-logo {
     margin-top: 25px;
+    width: 100%;
   }
 
-.social-share {
-  float: right;
-  margin: 0 0 0 20px; }
-  .social-share span {
-    display: block; }
-  .social-share li {
-    float: none;
-    margin: 3px 0; }
   #header-wrapper {
     }
     #header-wrapper header {
@@ -1198,11 +1180,10 @@ body.not-front #content-wrapper {
     margin-top: -40px; }
     .front #content-wrapper #features .feature {
       width: 100%;
-      height: 420px; }
+      height: 650px; }
       .front #content-wrapper #features .feature h1 {
         font-size: 35px;
         color: #fff;
-        font-weight: 400;
         line-height: 1.1em; }
       .front #content-wrapper #features .feature h2 {
         font-size: 20px;
@@ -1224,13 +1205,13 @@ body.not-front #content-wrapper {
     .front #content-wrapper #features .feature-noimage {
       text-align: center; }
       .front #content-wrapper #features .feature-noimage .content-wrapper {
-        padding: 140px 100px 0 100px;
+        padding: 216px 100px 0 100px;
         width: 70%; }
         .front #content-wrapper #features .feature-noimage .content-wrapper h1 {
           text-align: center; }
         .front #content-wrapper #features .feature-noimage .content-wrapper h2 {
           text-align: center; }
-  .front #content-wrapper #help-me-automate-desktop {
+  .front #content-wrapper .how-it-works-flow {
     display: block;
     width: 100%;
     background-color: #fff;
@@ -1239,28 +1220,12 @@ body.not-front #content-wrapper {
     background-image: url("../images/rays.png");
     background-repeat: no-repeat;
     background-position: center top; }
-  .front #content-wrapper .help-me-automate-float {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    height: 144px;
-    top: -40px;
-    left: 0;
-    z-index: 200; }
-    .front #content-wrapper .help-me-automate-float div {
-      background-image: url("../images/help-me-automate.png");
-      background-size: 144px 149px;
-      width: 144px;
-      height: 149px;
-      margin: 0 auto; }
-  .front #content-wrapper #help-me-automate-mobile {
-    display: none; }
-  .front #content-wrapper .help-area {
+  .front #content-wrapper .how-it-works-step {
     float: left;
     width: 31.33%;
     margin: 0 1%;
     text-align: center; }
-    .front #content-wrapper .help-area .btn {
+    .front #content-wrapper .how-it-works-step .btn {
       margin: 0 auto; }
   .front #content-wrapper .center-wrapper .content-wrapper {
     max-width: 875px;
