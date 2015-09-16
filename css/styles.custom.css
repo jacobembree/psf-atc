@@ -440,9 +440,9 @@ header .block-superfish::after,
 #features .feature-first {
   background-image: url('../images/slide1.png'); }
 #features .feature-second {
-  background-image: url('../images/slide1.png'); }
+  background-image: url('../images/slide2.png'); }
 #features .feature-third {
-  background-image: url('../images/slide1.png'); }
+  background-image: url('../images/slide3.png'); }
 
 #clients {
   padding: 30px 0;
