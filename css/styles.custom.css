@@ -657,7 +657,22 @@ header .block-superfish::after,
       .front #content-wrapper .how-it-works-step:hover .explanation-container {
         background-color: #E07865; /* dusty rose */
         color: white;
+        position: relative;
       }
+      .front #content-wrapper .how-it-works-step:hover .explanation-container::after {
+        bottom: -8px;
+        content: '';
+        left: calc(50% - 8px);
+        position: absolute;
+
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+
+        border-top: 8px solid #E07865;
+      }
+
       .front #content-wrapper .how-it-works-step .top-adverb,
       .front #content-wrapper .how-it-works-step .bottom-adverb {
         font-weight: bold;
@@ -1251,17 +1266,40 @@ body.not-front #content-wrapper {
     background-color: #fff;
     padding: 40px 0 40px;
     position: relative;
-    background-image: url("../images/how-it-works-graphics-all.png");
     background-repeat: no-repeat;
-    background-position: center 80px; }
-    .front #content-wrapper .how-it-works-flow h2 {
-      padding-bottom: 140px;
-    }
+    background-position: center 150px; }
     .front #content-wrapper .how-it-works-step {
+      background-repeat: no-repeat;
+      background-position: center top;
       float: left;
       width: 31.33%;
-      margin: 0 1%;
+      margin: 40px 1% 0;
+      padding-bottom: 40px;
+      padding-top: 180px;
       text-align: center; }
+    .front #content-wrapper .how-it-works-step.first {
+      background-image: url("../images/how-it-works-step-1.png");
+    }
+    .front #content-wrapper .how-it-works-step.second {
+      background-image: url("../images/how-it-works-step-2.png");
+    }
+    .front #content-wrapper .how-it-works-step.third {
+      background-image: url("../images/how-it-works-step-3.png");
+    }
+      .front #content-wrapper .how-it-works-step .bottom-adverb {
+        bottom: 0;
+        position: absolute;
+        width: 31.33%;
+      }
+      .front #content-wrapper .how-it-works-step.first .bottom-adverb {
+        left: 1%;
+      }
+      .front #content-wrapper .how-it-works-step.second .bottom-adverb {
+        left: 34.33%;
+      }
+      .front #content-wrapper .how-it-works-step.third .bottom-adverb {
+        right: 1%;
+      }
       .front #content-wrapper .how-it-works-step .btn {
         margin: 0 auto; }
       .front #content-wrapper .how-it-works-step .top-adverb {
@@ -1375,6 +1413,9 @@ header .block-superfish::after,
     margin: 0 auto; }
   .front #content-wrapper .center-wrapper .content-wrapper {
     margin: 0 auto; }
+  .front #content-wrapper .how-it-works-flow {
+    background-image: url("../images/how-it-works-graphics-arrows-with-space.png");
+  }
 
 .page-community .panel-3col-stacked .panel-col-first {
   width: 25%;
