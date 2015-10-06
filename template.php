@@ -144,4 +144,3 @@ function psf_atc_form_search_block_form_alter(&$form, &$form_state) {
   $form['actions']['submit']['#attributes']['alt'] = t('Go');
   unset($form['actions']['submit']['#value']);
 }
-
