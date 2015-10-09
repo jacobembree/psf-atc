@@ -1,0 +1,28 @@
+.quicktabs-style-tweak-2 {
+}
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 {
+  margin-right: 15px;
+}
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li {
+  display: block;
+  width: 100%;
+}
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li > a {
+  background-color: #E07865;
+  color: white;
+  display: block;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 48em) {
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li {
+  display: inline;
+  width: 33.33%;
+}
+}
+
+@media screen and (min-width: 64em) {
+}
