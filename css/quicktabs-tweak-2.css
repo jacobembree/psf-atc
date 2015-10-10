@@ -1,6 +1,8 @@
 .quicktabs-style-tweak-2 {
+  background-color: white;
 }
 .quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 {
+  background-color: #4F4F4F;
   margin-right: 15px;
 }
 .quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li {
@@ -16,12 +18,41 @@
   text-align: center;
   text-transform: uppercase;
 }
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li.active > a,
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li:hover > a {
+  background-color: white;
+  color: #252525; /* almost black */
+}
+.quicktabs-style-tweak-2 .quicktabs-container-what-we-do {
+  padding-top: 40px;
+}
 
 @media screen and (min-width: 48em) {
+#quicktabs-what-we-do {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 {
+  margin: 0;
+}
 .quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li {
   display: inline;
+  margin-left: 2px;
+  margin-right: 2px;
   width: 33.33%;
 }
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li.first {
+  margin-left: 0;
+}
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li.last {
+  margin-right: 0;
+}
+.quicktabs-style-tweak-2 ul.quicktabs-style-tweak-2 > li > a {
+  display: inline-block;
+  max-height: 88px;
+  max-width: 350px;
+  width: 33%;
 }
 
 @media screen and (min-width: 64em) {

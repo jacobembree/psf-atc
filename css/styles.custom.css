@@ -173,7 +173,7 @@ nav#block-superfish-1 {
 #page-wrapper {
   max-width: 100%;
   min-width: 0%;
-  background-color: #2D3948;
+  background-color: white;
   font-size: 0.75em;
   line-height: 1.633em; }
 
@@ -730,14 +730,18 @@ header .block-superfish::after,
   background-position: center top;
   background-repeat: no-repeat;
 }
-.front #content-wrapper #content .pane-personalstylefinder-what-we-do-tabs h2 {
-  color: white;
-  margin: 0;
-  padding-bottom: 120px;
-  padding-top: 120px;
-  text-align: center;
-  text-transform: uppercase;
-}
+  .front #content-wrapper #content .pane-personalstylefinder-what-we-do-tabs h2.pane-title {
+    color: white;
+    margin: 0;
+    padding-bottom: 145px;
+    padding-top: 145px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .front #content-wrapper #content .pane-personalstylefinder-what-we-do-tabs .style-image {
+    float: left;
+    margin-right: 20px;
+  }
 
 .front #content-wrapper .center-wrapper .content-wrapper {
   max-width: 875px;
