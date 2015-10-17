@@ -722,11 +722,28 @@ header .block-superfish::after,
       .front #content-wrapper .how-it-works-step:hover .bottom-adverb::before {
         background-position: 0 28px;
       }
+.you-deserve {
+  background-image: url("../images/you-deserve.png");
+  background-repeat: no-repeat;
+  height: 362px;
+  line-height: 1;
+  padding: 200px 50px 0;
+  text-align: center;
+}
+  .you-deserve h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+  }
+  .you-deserve .neat-button a {
+    background-color: transparent;
+    border: 1px solid white;
+  }
 .front #content-wrapper .panel-col-top .panel-separator {
   display: none;
 }
 .front #content-wrapper .pane-personalstylefinder-what-we-do-tabs {
-  background-image: url("/sites/all/themes/psf-atc/images/WhatWeDo.png");
+  background-image: url("/sites/all/themes/psf-atc/images/what-we-do.png");
   background-position: center top;
   background-repeat: no-repeat;
 }
