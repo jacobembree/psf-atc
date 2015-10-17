@@ -722,23 +722,89 @@ header .block-superfish::after,
       .front #content-wrapper .how-it-works-step:hover .bottom-adverb::before {
         background-position: 0 28px;
       }
-.you-deserve {
+.front .you-deserve {
   background-image: url("../images/you-deserve.png");
   background-repeat: no-repeat;
+  background-position: center top;
   height: 362px;
   line-height: 1;
-  padding: 200px 50px 0;
+  padding-top: 20px;
   text-align: center;
 }
-  .you-deserve h2 {
+  .front #content-wrapper #content .you-deserve h2 {
     color: white;
     font-size: 40px;
     font-weight: normal;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
   }
-  .you-deserve .neat-button a {
+  .front .you-deserve .neat-button a {
     background-color: transparent;
     border: 1px solid white;
   }
+.front .triptych {
+}
+  .front .triptych h3 {
+    color: black;
+    text-align: center;
+  }
+  .front .triptych ul.menu {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+  }
+    .front .triptych ul.menu li {
+      display: inline;
+      list-style-image: none;
+      list-style-type: none;
+      margin: 0 10px;
+    }
+      .front .triptych ul.menu li a {
+        color: #707b8c;
+      }
+      .front .triptych ul.menu li a:hover {
+        color: #E07865;
+      }
+    .front .triptych .social-buttons li {
+      float: left;
+    }
+      .front .triptych .social-buttons li a {
+        display: block;
+        height: 38px;
+        width: 38px;
+      }
+      .front .triptych .social-buttons li a.fb {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/fb.png");
+      }
+      .front .triptych .social-buttons li a.fb:hover {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/fb-hover.png");
+      }
+      .front .triptych .social-buttons li a.instagram {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/instagram.png");
+      }
+      .front .triptych .social-buttons li a.instagram:hover {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/instagram-hover.png");
+      }
+      .front .triptych .social-buttons li a.pinterest {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/pinterest.png");
+      }
+      .front .triptych .social-buttons li a.pinterest:hover {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/pinterest-hover.png");
+      }
+      .front .triptych .social-buttons li a.twitter {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/twitter.png");
+      }
+      .front .triptych .social-buttons li a.twitter:hover {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/twitter-hover.png");
+      }
+      .front .triptych .social-buttons li a.tumblr {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/tumblr.png");
+      }
+      .front .triptych .social-buttons li a.tumblr:hover {
+        background-image: url("/sites/all/themes/psf-atc/images/social-buttons/tumblr-hover.png");
+      }
 .front #content-wrapper .panel-col-top .panel-separator {
   display: none;
 }
@@ -1343,6 +1409,12 @@ body.not-front #content-wrapper {
       .front #content-wrapper .how-it-works-step .top-adverb {
         width: 240px;
       }
+.front .you-deserve {
+  padding: 200px 50px 0;
+}
+.front .triptych .panel {
+  float: left;
+}
   .front #content-wrapper .center-wrapper .content-wrapper {
     max-width: 875px;
     margin: 0 20px; }
